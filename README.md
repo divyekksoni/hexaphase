@@ -64,8 +64,8 @@ Scrum has ceremonies. Hexaphase has three lightweight rituals:
 
 | Ritual | When | What happens |
 |---|---|---|
-| **Session Start** | Every time an AI session begins | The AI reads `ai-instructions.md`, then `project-health.md`, then the current phase folder, and confirms the current phase and next task before writing anything. |
-| **Session End** | Every time an AI session ends | The AI adds an entry to the Session Log in `project-health.md`: what changed, what's next, and any open questions. |
+| **Hexaphase Session Start** | Every time an AI session begins (the human types the command; the AI also does it automatically) | The AI reads `ai-instructions.md`, then `project-health.md`, then the current phase folder, and confirms the current phase and next task before writing anything. |
+| **Hexaphase Session End** | Every time an AI session ends (typed, or automatically when files changed) | The AI adds an entry to the Session Log in `project-health.md`: what changed, what's next, and any open questions. |
 | **Phase Gate** | When a phase's exit criteria are met | The human reviews the phase deliverables, ticks the gate in `project-health.md`, and the project moves to the next phase. |
 
 ## The Roles
@@ -93,7 +93,7 @@ Scrum has ceremonies. Hexaphase has three lightweight rituals:
    | GitHub Copilot | `.github/copilot-instructions.md` |
 
    Delete the ones you don't use. For chat-only tools (ChatGPT, Claude.ai), paste `ai-instructions.md` and `project-health.md` at the start of the chat.
-4. Start your first session with: *"Begin Session Start. We are in Phase 1 – Planning."*
+4. Start every session by typing **`Hexaphase Session Start`** and end it with **`Hexaphase Session End`**.
 
 Adding Hexaphase to an **existing project**, or want a **lighter version** for a weekend build? See [GUIDE.md](GUIDE.md#adopting-hexaphase).
 

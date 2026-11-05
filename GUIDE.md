@@ -11,7 +11,7 @@ This guide covers each phase in detail. Every phase folder in the template also 
 ### `ai-instructions.md`
 The contract between the project and any AI. It covers:
 - a project overview (name, goal, users, tech stack)
-- the Session Start and Session End rituals
+- the commands `Hexaphase Session Start` and `Hexaphase Session End`, and what the AI does for each
 - where things belong (docs vs. code, main app vs. supporting apps)
 - rules for asking questions, making changes, and respecting phase gates
 
@@ -162,7 +162,7 @@ Because the app is not at the repo root, set the app's root directory once in yo
 - **Monorepo tools** (npm/pnpm workspaces, Nx, Turborepo): list `4-Coding/*` as the workspace packages.
 
 ### Keep the AI's context small
-Hexaphase docs grow over time. The Session Start ritual tells the AI to read only the two root files plus the **current** phase folder. Earlier phases are read on demand. Keep `project-health.md` short: archive Session Log entries older than about 20 into `project-health-archive.md`.
+Hexaphase docs grow over time. The `Hexaphase Session Start` command tells the AI to read only the two root files plus the **current** phase folder. Earlier phases are read on demand. Keep `project-health.md` short: archive Session Log entries older than about 20 into `project-health-archive.md`.
 
 ---
 

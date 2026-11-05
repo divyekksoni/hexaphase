@@ -18,27 +18,42 @@
 
 ---
 
-## 2. Session Start (do this every time)
+## 2. Hexaphase Commands
+
+The human controls sessions with these commands (any capitalisation, with or without punctuation):
+
+| Command | What the AI does |
+|---|---|
+| **`Hexaphase Session Start`** | Runs Section 3 |
+| **`Hexaphase Session End`** | Runs Section 4 |
+
+## 3. Hexaphase Session Start
+
+Run this when the human types **`Hexaphase Session Start`**. If a session begins with any other request, run these steps silently before acting on it.
 
 1. Read this file completely.
 2. Read `project-health.md` and identify the **current phase**, the **last Session Log entry**, and any **open blockers**.
-3. Read the `README.md` of the current phase folder, plus any documents in it.
-4. Reply with a short summary: *current phase, what was done last, what you propose to do next.*
-5. Wait for the human to confirm before making large changes.
+3. Read the `README.md` of the current phase folder, plus any documents in it. Read earlier phases only when needed.
+4. Reply with a short summary: *current phase, what was done last, gate status, and what you propose to do next.*
+5. Wait for the human to confirm before making changes.
 
-## 3. Session End (do this every time)
+## 4. Hexaphase Session End
 
-Before finishing, add a new entry at the **top** of the Session Log in `project-health.md`:
-- the date
-- what changed (files created or modified)
-- what is next
-- open questions for the human
+Run this when the human types **`Hexaphase Session End`**. Also run it before you finish any session in which files changed, even if the human didn't ask.
 
-Also update the phase checklist and status if anything moved.
+1. Add a new entry at the **top** of the Session Log in `project-health.md`:
+   - the date and a short session title
+   - what changed (files created or modified)
+   - what is next
+   - open questions for the human
+
+   If you already logged this session, update that entry instead of adding a duplicate.
+2. Update "Last updated", the status and the phase gate checklist if anything moved. Never tick a gate yourself; only the human approves gates.
+3. Reply with the summary and ask whether to commit the changes.
 
 ---
 
-## 4. Where Things Belong
+## 5. Where Things Belong
 
 | Content | Location |
 |---|---|
@@ -57,7 +72,7 @@ Never put source code outside `4-Coding/`. Never put planning or design document
 
 ---
 
-## 5. Rules for the AI
+## 6. Rules for the AI
 
 1. **Respect the phase.** Work on the current phase. If you need to change an earlier phase (for example, a requirement turns out to be wrong), say so, update that document, and log it in the Decisions Log.
 2. **Don't skip gates.** Don't start coding before the Design gate is approved, unless the human explicitly says to (for example, for a prototype or spike). Log that exception.
@@ -71,7 +86,7 @@ Never put source code outside `4-Coding/`. Never put planning or design document
 
 ---
 
-## 6. Project-Specific Rules  *(optional, the human fills this in)*
+## 7. Project-Specific Rules  *(optional, the human fills this in)*
 
 - Coding style:
 - Libraries to prefer or avoid:

@@ -8,6 +8,6 @@ Hexaphase uses [Semantic Versioning](https://semver.org/): MAJOR for breaking ch
 - Initial public release, by Divyek Soni.
 - Root files: `ai-instructions.md`, `project-health.md`.
 - Six phase folders: Planning, Analysis, Design, Coding (`main-app` plus supporting apps), Testing, Deployment.
-- Six principles, three rituals (Session Start, Session End, Phase Gate), roles.
+- Six principles, three rituals (Hexaphase Session Start, Hexaphase Session End, Phase Gate) with typed commands, roles.
 - Pointer files for Claude Code, Codex/AGENTS.md, Gemini CLI, Cursor and GitHub Copilot.
 - Guidance for Hexaphase Lite, adopting in existing projects, and tooling.
