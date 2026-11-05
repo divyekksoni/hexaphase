@@ -22,7 +22,7 @@ It is intentionally simple:
 - **Six numbered folders** walk every project through the classic SDLC: Planning → Analysis → Design → Coding → Testing → Deployment.
 - **Code lives in one place** (`4-Coding/`), with the main app separated from supporting apps.
 
-It works with any AI tool (Claude, ChatGPT, Copilot, Cursor, Gemini, local models), any technology, and any project size.
+It's plain Markdown and folders, so it works with any technology and any project size. **Tested with Claude Code and Gemini CLI**; other AI tools are coming.
 
 ---
 
@@ -82,17 +82,14 @@ Scrum has ceremonies. Hexaphase has three lightweight rituals:
 
 1. Copy the [`template/`](template/) folder into a new project (or the root of an existing one).
 2. Fill in the **Project Overview** section at the top of `ai-instructions.md`.
-3. That's it. The template already includes one-line pointer files that the popular AI tools load automatically, and each one sends the AI to `ai-instructions.md`:
+3. Open the project in a supported AI tool. The template includes the file each tool loads automatically, which points the AI to `ai-instructions.md`:
 
-   | Tool | Auto-loaded file |
-   |---|---|
-   | Claude Code | `CLAUDE.md` |
-   | OpenAI Codex and other agents | `AGENTS.md` |
-   | Gemini CLI | `GEMINI.md` |
-   | Cursor | `.cursor/rules/hexaphase.mdc` |
-   | GitHub Copilot | `.github/copilot-instructions.md` |
+   | Tool | Auto-loaded file | Status |
+   |---|---|---|
+   | **Claude Code** | `CLAUDE.md` | ✅ Tested |
+   | **Gemini CLI** | `GEMINI.md` | ✅ Tested. Tip: if responses are slow, start with `gemini -m gemini-3-flash-preview` (or switch with `/model`). |
 
-   Delete the ones you don't use. For chat-only tools (ChatGPT, Claude.ai), paste `ai-instructions.md` and `project-health.md` at the start of the chat.
+   Other tools (Cursor, Copilot, Codex, ChatGPT…) aren't officially tested yet. See [GUIDE.md](GUIDE.md#other-ai-tools-untested) to try them.
 4. Start every session by typing **`Hexaphase Session Start`** and end it with **`Hexaphase Session End`**.
 
 Adding Hexaphase to an **existing project**, or want a **lighter version** for a weekend build? See [GUIDE.md](GUIDE.md#adopting-hexaphase).

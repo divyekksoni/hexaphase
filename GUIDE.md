@@ -166,6 +166,24 @@ Hexaphase docs grow over time. The `Hexaphase Session Start` command tells the A
 
 ---
 
+## Other AI tools (untested)
+Hexaphase v1.0 is tested with **Claude Code** and **Gemini CLI**. Other tools should work, because the rules are plain Markdown, but they haven't been verified yet. To try one, create its auto-loaded file in the project root with this line:
+
+```
+This project follows the Hexaphase framework. Before doing anything, read ai-instructions.md, then project-health.md, and follow them. Commands: "Hexaphase Session Start" and "Hexaphase Session End" (defined in ai-instructions.md).
+```
+
+| Tool | File to create |
+|---|---|
+| OpenAI Codex and other agents | `AGENTS.md` |
+| Cursor | `.cursor/rules/hexaphase.mdc` (add `alwaysApply: true` front matter) |
+| GitHub Copilot | `.github/copilot-instructions.md` |
+| Chat tools (ChatGPT, Claude.ai) | Paste `ai-instructions.md` and `project-health.md` at the start of the chat |
+
+Tested it? Please share the result in a GitHub issue labelled `tool-integration`.
+
+---
+
 ## Security Rules (all phases)
 - Never commit secrets, keys or passwords. Reference them in `environments.md` by name only.
 - The AI must not run destructive commands (deleting data, force-pushing, dropping databases) without explicit human approval.
