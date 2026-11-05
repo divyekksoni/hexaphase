@@ -1,0 +1,13 @@
+# Changelog
+
+All notable changes to the Hexaphase framework are documented here.
+Hexaphase uses [Semantic Versioning](https://semver.org/): MAJOR for breaking changes to the folder structure or rituals, MINOR for new guidance, PATCH for fixes and wording.
+
+## [1.0.0] - 2026-11-02
+### Added
+- Initial public release, by Divyek Soni.
+- Root files: `ai-instructions.md`, `project-health.md`.
+- Six phase folders: Planning, Analysis, Design, Coding (`main-app` plus supporting apps), Testing, Deployment.
+- Six principles, three rituals (Session Start, Session End, Phase Gate), roles.
+- Pointer files for Claude Code, Codex/AGENTS.md, Gemini CLI, Cursor and GitHub Copilot.
+- Guidance for Hexaphase Lite, adopting in existing projects, and tooling.

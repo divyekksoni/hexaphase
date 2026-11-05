@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use or reference this framework, please cite it as below."
+title: "Hexaphase: A Folder-First SDLC Framework for AI-Assisted Software Development"
+type: software
+authors:
+  - given-names: Divyek
+    family-names: Soni
+version: 1.0.0
+date-released: 2026-11-02
+license: CC-BY-4.0
+keywords:
+  - SDLC
+  - AI-assisted development
+  - vibe coding
+  - software process
+  - framework
