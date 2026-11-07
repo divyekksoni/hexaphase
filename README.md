@@ -6,7 +6,7 @@
 
 Created by **Divyek Soni** · Version 1.0 · 2026
 
-[![Built with Hexaphase](https://img.shields.io/badge/built%20with-Hexaphase-6f42c1)](https://github.com/divyekksoni/hexaphase)
+[![Built with Hexaphase](https://img.shields.io/badge/built%20with-Hexaphase-6f42c1)](https://github.com/divyekksoni/hexaphase) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24029073.svg)](https://doi.org/10.5281/zenodo.24029073)
 
 ---
 
@@ -134,6 +134,6 @@ Hexaphase is maintained by its author, much as the Scrum Guide is maintained by 
 
 Hexaphase was created by **Divyek Soni**. When you write about, teach, adapt or build on this framework, please credit:
 
-> Hexaphase SDLC Framework by Divyek Soni, https://github.com/divyekksoni/hexaphase
+> Hexaphase SDLC Framework by Divyek Soni, https://github.com/divyekksoni/hexaphase, DOI: [10.5281/zenodo.24029073](https://doi.org/10.5281/zenodo.24029073)
 
 See [LICENSE.md](LICENSE.md) and [NOTICE](NOTICE) for the terms.
