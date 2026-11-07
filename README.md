@@ -114,6 +114,14 @@ See [GUIDE.md](GUIDE.md) for each phase in detail: purpose, deliverables, gate c
 
 ---
 
+## 🧪 Join the Early-Adopter Study
+
+Use Hexaphase on a real project for 4 weeks (starting Nov 23, 2026) and share honest feedback through a short survey and an optional 20-minute interview. Your feedback shapes v1.1 and a research paper (anonymised).
+
+👉 **[Sign up here](https://forms.gle/gQLAMtDLiK3H16xe9)**
+
+---
+
 ## Built with Hexaphase?
 
 Add the badge to your project's README and help others discover the framework:
