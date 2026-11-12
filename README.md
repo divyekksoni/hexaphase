@@ -94,7 +94,7 @@ Hexaphase works through an AI coding tool that can read and write files in your 
 | Tool | Cost | Auto-loaded file | Status |
 |---|---|---|---|
 | **Claude Code** | Paid Claude plan (Pro or above) or an Anthropic API account | `CLAUDE.md` | ✅ Tested |
-| **Gemini CLI** | Free with a personal Google account (daily limits apply) | `GEMINI.md` | ✅ Tested. Tip: if responses are slow, start it with `gemini -m gemini-3-flash-preview` (or switch with `/model`). |
+| **Gemini CLI** | Any Plans with a personal Google account | `GEMINI.md` | ✅ Tested. Tip: if responses are slow, start it with `gemini -m gemini-3-flash-preview` (or switch with `/model`). |
 
 The template includes both auto-loaded files. Each one simply tells the AI to read `ai-instructions.md` first. Other tools (Cursor, Copilot, Codex, ChatGPT…) aren't officially tested yet; see [GUIDE.md](GUIDE.md#other-ai-tools-untested) to try them.
 
