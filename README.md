@@ -269,6 +269,14 @@ Hexaphase is maintained by its author, much as the Scrum Guide is maintained by 
 
 ---
 
+## References & Credits
+
+Hexaphase builds on established software process work (the phased SDLC, Agile, Scrum, Architecture Decision Records) and on emerging conventions for AI coding agents. Its evaluation follows the *Guidelines for Empirical Studies in Software Engineering involving Large Language Models* (Baltes et al., 2026).
+
+See **[REFERENCES.md](REFERENCES.md)** for the full list of sources and credits. Suggestions are welcome through an [issue](https://github.com/divyekksoni/hexaphase/issues).
+
+---
+
 ## Attribution
 
 Hexaphase was created by **Divyek Soni**. When you write about, teach, adapt or build on this framework, please credit:
